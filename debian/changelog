@@ -1,0 +1,54 @@
+ros-indigo-romeo-moveit-actions (0.0.7-1trusty) trusty; urgency=high
+
+  * Merge pull request #1 <https://github.com/nlyubova/romeo_moveit_actions/issues/1> from IanTheEngineer/remove_shape_tools
+    Convert deprecated shape_tools dependency
+  * Convert deprecated shape_tools dependency
+    shape_tools functionality was merged into geometric_shapes:
+    https://github.com/ros-planning/geometric_shapes/pull/32
+    and removed from moveit_core
+    https://github.com/ros-planning/moveit_core/pull/242
+    which caused this issue.
+    This commit updates the pick and place tutorial and adds
+    geometric_shapes to the package.xml and CMakeLists.txt to
+    prevent the ROS buildfarm from failing to build this package.
+  * Contributors: Ian McMahon, Natalia Lyubova
+
+ -- Natalia Lyubova <natalia.lyubova@gmail.com>  Tue, 02 Feb 2016 23:00:00 -0000
+
+ros-indigo-romeo-moveit-actions (0.0.6-1trusty) trusty; urgency=high
+
+  * fixing visualization of geometric shapes and cleaning
+  * renaming the package to romeo_moveit_actions
+
+ -- Natalia Lyubova <natalia.lyubova@gmail.com>  Tue, 29 Dec 2015 23:00:00 -0000
+
+ros-indigo-romeo-moveit-actions (0.0.5-1trusty) trusty; urgency=high
+
+  * adding changelogs
+
+ -- Natalia Lyubova <natalia.lyubova@gmail.com>  Sun, 13 Dec 2015 23:00:00 -0000
+
+ros-indigo-romeo-moveit-actions (0.0.4-1trusty) trusty; urgency=high
+
+  * adding changelogs
+  * fixing with changes in moveit visual tools
+
+ -- Natalia Lyubova <natalia.lyubova@gmail.com>  Wed, 09 Dec 2015 23:00:00 -0000
+
+ros-indigo-romeo-moveit-actions (0.0.3-1trusty) trusty; urgency=high
+
+  * 0.0.2
+  * adding CHANGELOG.rst
+
+ -- Natalia Lyubova <natalia.lyubova@gmail.com>  Wed, 25 Nov 2015 16:46:00 -0000
+
+ros-indigo-romeo-moveit-actions (0.0.2-1trusty) trusty; urgency=high
+
+  * adding CHANGELOG.rst
+  * adding a planning group (arm) name as an argument
+  * taking into account object height when grasping
+  * initial commit, new version of romeo_action package
+
+ -- Natalia Lyubova <natalia.lyubova@gmail.com>  Wed, 25 Nov 2015 16:09:00 -0000
+
+
